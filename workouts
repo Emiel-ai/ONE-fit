@@ -1,0 +1,15 @@
+export default function Workouts() {
+  return (
+    <main style={{padding:40}}>
+      <h1>Training</h1>
+
+      <ul>
+        <li>Push-ups</li>
+        <li>Pull-ups</li>
+        <li>Dips</li>
+        <li>Muscle-up progressie</li>
+        <li>Planche training</li>
+      </ul>
+    </main>
+  );
+}
