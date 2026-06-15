@@ -1,0 +1,15 @@
+export default function Premium() {
+  return (
+    <main style={{padding:40}}>
+      <h1>Premium</h1>
+
+      <p>Unlock AI coach & volledige tracking</p>
+
+      <h2>€14.99 / maand</h2>
+      <button>Upgrade</button>
+
+      <h2>€29.99 / maand (Elite)</h2>
+      <button>Elite</button>
+    </main>
+  );
+}
