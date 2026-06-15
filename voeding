@@ -1,0 +1,11 @@
+export default function Nutrition() {
+  return (
+    <main style={{padding:40}}>
+      <h1>Voedingsplan</h1>
+
+      <p>Ontbijt: Havermout + banaan</p>
+      <p>Lunch: Kip + rijst + groenten</p>
+      <p>Diner: Zalm + aardappel + broccoli</p>
+    </main>
+  );
+}
