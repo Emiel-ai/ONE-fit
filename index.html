@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ONE Fit - Premium Fitness & Calisthenics Training Platform. Build your body with scientifically-designed programs and expert guidance.">
+    <meta name="keywords" content="fitness, calisthenics, workout, training, nutrition, health">
+    <meta name="author" content="ONE Fit">
+    <meta name="theme-color" content="#0a0e27">
+    
+    <title>ONE Fit - Premium Fitness & Calisthenics Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">ONE Fit</span>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link" onclick="navigateToSection('home')">Home</a></li>
+                <li class="nav-item"><a href="#workouts" class="nav-link" onclick="navigateToSection('workouts')">Workouts</a></li>
+                <li class="nav-item"><a href="#calisthenics" class="nav-link" onclick="navigateToSection('calisthenics')">Calisthenics</a></li>
+                <li class="nav-item"><a href="#nutrition" class="nav-link" onclick="navigateToSection('nutrition')">Nutrition</a></li>
+                <li class="nav-item"><a href="#progress" class="nav-link" onclick="navigateToSection('progress')">Progress</a></li>
+                <li class="nav-item"><a href="#calculators" class="nav-link" onclick="navigateToSection('calculators')">Tools</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link" onclick="navigateToSection('testimonials')">Testimonials</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link" onclick="navigateToSection('faq')">FAQ</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" onclick="navigateToSection('contact')">Contact</a></li>
+                <li class="nav-item"><button class="cta-button-nav">Start Free Trial</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your Body. Elevate Your Life.</h1>
+            <p class="hero-subtitle">Join thousands achieving their fitness goals with science-backed calisthenics programs and personalized nutrition guidance</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="smoothScroll('workouts')">Explore Programs</button>
+                <button class="btn-secondary" onclick="smoothScroll('calisthenics')">View Exercises</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3 class="stat-number" data-target="50000">0</h3>
+                    <p class="stat-label">Active Members</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="1200">0</h3>
+                    <p class="stat-label">Exercises</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="95">0</h3>
+                    <p class="stat-label">Success Rate %</p>
+                </div>
+                <div class="stat">
+                    <h3 class="stat-number" data-target="4.9">0</h3>
+                    <p class="stat-label">Rating ★</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="fitness-placeholder">
+                <div class="placeholder-icon">💪</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKOUTS SECTION -->
+    <section id="workouts" class="workouts">
+        <div class="section-header">
+            <h2>Workout Programs</h2>
+            <p>Choose your level and start your transformation journey</p>
+        </div>
+        
+        <div class="workouts-container">
+            <!-- Beginner Program -->
+            <div class="workout-card" data-level="beginner">
+                <div class="card-icon">🌱</div>
+                <h3>Beginner</h3>
+                <p class="card-subtitle">4 Weeks</p>
+                <ul class="workout-features">
+                    <li>✓ Foundation building</li>
+                    <li>✓ 3 days per week</li>
+                    <li>✓ 30-minute sessions</li>
+                    <li>✓ Full video guides</li>
+                    <li>✓ Progressive difficulty</li>
+                </ul>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 30%"></div>
+                </div>
+                <button class="btn-workout" onclick="selectWorkout('beginner')">Start Now</button>
+            </div>
+
+            <!-- Intermediate Program -->
+            <div class="workout-card featured" data-level="intermediate">
+                <div class="card-badge">Most Popular</div>
+                <div class="card-icon">⚡</div>
+                <h3>Intermediate</h3>
+                <p class="card-subtitle">8 Weeks</p>
+                <ul class="workout-features">
+                    <li>✓ Strength building</li>
+                    <li>✓ 4 days per week</li>
+                    <li>✓ 45-minute sessions</li>
+                    <li>✓ Form corrections</li>
+                    <li>✓ Custom tracking</li>
+                </ul>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%"></div>
+                </div>
+                <button class="btn-workout" onclick="selectWorkout('intermediate')">Start Now</button>
+            </div>
+
+            <!-- Advanced Program -->
+            <div class="workout-card" data-level="advanced">
+                <div class="card-icon">🏆</div>
+                <h3>Advanced</h3>
+                <p class="card-subtitle">12 Weeks</p>
+                <ul class="workout-features">
+                    <li>✓ Peak performance</li>
+                    <li>✓ 6 days per week</li>
+                    <li>✓ 60-minute sessions</li>
+                    <li>✓ Expert coaching</li>
+                    <li>✓ Competition prep</li>
+                </ul>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%"></div>
+                </div>
+                <button class="btn-workout" onclick="selectWorkout('advanced')">Start Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALISTHENICS LIBRARY SECTION -->
+    <section id="calisthenics" class="calisthenics">
+        <div class="section-header">
+            <h2>Calisthenics Exercise Library</h2>
+            <p>Master 1200+ bodyweight exercises with detailed form guides</p>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Exercises</button>
+            <button class="filter-btn" data-filter="push">Push</button>
+            <button class="filter-btn" data-filter="pull">Pull</button>
+            <button class="filter-btn" data-filter="legs">Legs</button>
+            <button class="filter-btn" data-filter="core">Core</button>
+            <button class="filter-btn" data-filter="cardio">Cardio</button>
+        </div>
+
+        <div class="exercise-grid">
+            <!-- Push Exercises -->
+            <div class="exercise-card" data-category="push">
+                <div class="exercise-image">📍</div>
+                <h4>Push-ups</h4>
+                <p class="exercise-type">Push • Beginner</p>
+                <div class="exercise-details">
+                    <span class="reps">10-20 reps</span>
+                    <span class="difficulty">★★☆☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('pushups')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="push">
+                <div class="exercise-image">📍</div>
+                <h4>Pike Push-ups</h4>
+                <p class="exercise-type">Push • Intermediate</p>
+                <div class="exercise-details">
+                    <span class="reps">8-15 reps</span>
+                    <span class="difficulty">★★★☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('pikepushups')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="push">
+                <div class="exercise-image">📍</div>
+                <h4>Handstand Push-ups</h4>
+                <p class="exercise-type">Push • Advanced</p>
+                <div class="exercise-details">
+                    <span class="reps">5-10 reps</span>
+                    <span class="difficulty">★★★★★</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('handstandpushups')">Learn More</button>
+            </div>
+
+            <!-- Pull Exercises -->
+            <div class="exercise-card" data-category="pull">
+                <div class="exercise-image">📍</div>
+                <h4>Pull-ups</h4>
+                <p class="exercise-type">Pull • Beginner</p>
+                <div class="exercise-details">
+                    <span class="reps">5-10 reps</span>
+                    <span class="difficulty">★★★☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('pullups')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="pull">
+                <div class="exercise-image">📍</div>
+                <h4>Muscle Ups</h4>
+                <p class="exercise-type">Pull • Advanced</p>
+                <div class="exercise-details">
+                    <span class="reps">3-8 reps</span>
+                    <span class="difficulty">★★★★☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('muscleups')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="pull">
+                <div class="exercise-image">📍</div>
+                <h4>Chin-ups</h4>
+                <p class="exercise-type">Pull • Beginner</p>
+                <div class="exercise-details">
+                    <span class="reps">8-12 reps</span>
+                    <span class="difficulty">★★★☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('chinups')">Learn More</button>
+            </div>
+
+            <!-- Leg Exercises -->
+            <div class="exercise-card" data-category="legs">
+                <div class="exercise-image">📍</div>
+                <h4>Squats</h4>
+                <p class="exercise-type">Legs • Beginner</p>
+                <div class="exercise-details">
+                    <span class="reps">15-25 reps</span>
+                    <span class="difficulty">★★☆☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('squats')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="legs">
+                <div class="exercise-image">📍</div>
+                <h4>Pistol Squats</h4>
+                <p class="exercise-type">Legs • Advanced</p>
+                <div class="exercise-details">
+                    <span class="reps">5-10 reps</span>
+                    <span class="difficulty">★★★★★</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('pistolsquats')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="legs">
+                <div class="exercise-image">📍</div>
+                <h4>Lunges</h4>
+                <p class="exercise-type">Legs • Beginner</p>
+                <div class="exercise-details">
+                    <span class="reps">10-15 per leg</span>
+                    <span class="difficulty">★★☆☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('lunges')">Learn More</button>
+            </div>
+
+            <!-- Core Exercises -->
+            <div class="exercise-card" data-category="core">
+                <div class="exercise-image">📍</div>
+                <h4>Planks</h4>
+                <p class="exercise-type">Core • Beginner</p>
+                <div class="exercise-details">
+                    <span class="reps">30-60 sec</span>
+                    <span class="difficulty">★★☆☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('planks')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="core">
+                <div class="exercise-image">📍</div>
+                <h4>L-Sits</h4>
+                <p class="exercise-type">Core • Advanced</p>
+                <div class="exercise-details">
+                    <span class="reps">15-30 sec</span>
+                    <span class="difficulty">★★★★☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('lsits')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="core">
+                <div class="exercise-image">📍</div>
+                <h4>Hollow Body Hold</h4>
+                <p class="exercise-type">Core • Intermediate</p>
+                <div class="exercise-details">
+                    <span class="reps">20-40 sec</span>
+                    <span class="difficulty">★★★☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('hollowbody')">Learn More</button>
+            </div>
+
+            <!-- Cardio Exercises -->
+            <div class="exercise-card" data-category="cardio">
+                <div class="exercise-image">📍</div>
+                <h4>Jumping Jacks</h4>
+                <p class="exercise-type">Cardio • Beginner</p>
+                <div class="exercise-details">
+                    <span class="reps">30-60 reps</span>
+                    <span class="difficulty">★☆☆☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('jumpingjacks')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="cardio">
+                <div class="exercise-image">📍</div>
+                <h4>Burpees</h4>
+                <p class="exercise-type">Cardio • Intermediate</p>
+                <div class="exercise-details">
+                    <span class="reps">10-20 reps</span>
+                    <span class="difficulty">★★★☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('burpees')">Learn More</button>
+            </div>
+
+            <div class="exercise-card" data-category="cardio">
+                <div class="exercise-image">📍</div>
+                <h4>High Knees Run</h4>
+                <p class="exercise-type">Cardio • Beginner</p>
+                <div class="exercise-details">
+                    <span class="reps">30-60 sec</span>
+                    <span class="difficulty">★★☆☆☆</span>
+                </div>
+                <button class="btn-exercise" onclick="viewExercise('highknees')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUTRITION SECTION -->
+    <section id="nutrition" class="nutrition">
+        <div class="section-header">
+            <h2>Nutrition Plans</h2>
+            <p>Fuel your body with science-backed meal plans</p>
+        </div>
+
+        <div class="nutrition-container">
+            <!-- Muscle Gain Plan -->
+            <div class="nutrition-card">
+                <div class="card-icon">🍗</div>
+                <h3>Muscle Gain</h3>
+                <p class="card-subtitle">2800-3200 Calories</p>
+                <div class="nutrition-info">
+                    <div class="macro-item">
+                        <span class="macro-label">Protein</span>
+                        <span class="macro-value">180g (25%)</span>
+                    </div>
+                    <div class="macro-item">
+                        <span class="macro-label">Carbs</span>
+                        <span class="macro-value">380g (50%)</span>
+                    </div>
+                    <div class="macro-item">
+                        <span class="macro-label">Fats</span>
+                        <span class="macro-value">85g (25%)</span>
+                    </div>
+                </div>
+                <div class="sample-meals">
+                    <h4>Sample Daily Menu:</h4>
+                    <p>🌅 Breakfast: Oats, Eggs, Banana</p>
+                    <p>🥤 Snack 1: Protein Shake</p>
+                    <p>🍱 Lunch: Chicken, Rice, Broccoli</p>
+                    <p>🥤 Snack 2: Almonds, Greek Yogurt</p>
+                    <p>🍽️ Dinner: Lean Beef, Sweet Potato, Vegetables</p>
+                </div>
+                <button class="btn-nutrition">Get Full Plan</button>
+            </div>
+
+            <!-- Fat Loss Plan -->
+            <div class="nutrition-card featured">
+                <div class="card-badge">Recommended</div>
+                <div class="card-icon">🥗</div>
+                <h3>Fat Loss</h3>
+                <p class="card-subtitle">1800-2200 Calories</p>
+                <div class="nutrition-info">
+                    <div class="macro-item">
+                        <span class="macro-label">Protein</span>
+                        <span class="macro-value">160g (35%)</span>
+                    </div>
+                    <div class="macro-item">
+                        <span class="macro-label">Carbs</span>
+                        <span class="macro-value">200g (35%)</span>
+                    </div>
+                    <div class="macro-item">
+                        <span class="macro-label">Fats</span>
+                        <span class="macro-value">65g (30%)</span>
+                    </div>
+                </div>
+                <div class="sample-meals">
+                    <h4>Sample Daily Menu:</h4>
+                    <p>🌅 Breakfast: Eggs, Whole Wheat Toast, Avocado</p>
+                    <p>🥤 Snack 1: Green Tea, Almonds</p>
+                    <p>🍱 Lunch: Grilled Chicken, Quinoa, Salad</p>
+                    <p>🥤 Snack 2: Protein Bar</p>
+                    <p>🍽️ Dinner: Fish, Vegetables, Brown Rice</p>
+                </div>
+                <button class="btn-nutrition">Get Full Plan</button>
+            </div>
+
+            <!-- Maintenance Plan -->
+            <div class="nutrition-card">
+                <div class="card-icon">⚖️</div>
+                <h3>Maintenance</h3>
+                <p class="card-subtitle">2400-2600 Calories</p>
+                <div class="nutrition-info">
+                    <div class="macro-item">
+                        <span class="macro-label">Protein</span>
+                        <span class="macro-value">150g (25%)</span>
+                    </div>
+                    <div class="macro-item">
+                        <span class="macro-label">Carbs</span>
+                        <span class="macro-value">320g (50%)</span>
+                    </div>
+                    <div class="macro-item">
+                        <span class="macro-label">Fats</span>
+                        <span class="macro-value">70g (25%)</span>
+                    </div>
+                </div>
+                <div class="sample-meals">
+                    <h4>Sample Daily Menu:</h4>
+                    <p>🌅 Breakfast: Oatmeal, Berries, Nuts</p>
+                    <p>🥤 Snack 1: Fruit, Cheese</p>
+                    <p>🍱 Lunch: Turkey Sandwich, Vegetables</p>
+                    <p>🥤 Snack 2: Yogurt, Granola</p>
+                    <p>🍽️ Dinner: Salmon, Asparagus, Potatoes</p>
+                </div>
+                <button class="btn-nutrition">Get Full Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULATORS SECTION -->
+    <section id="calculators" class="calculators">
+        <div class="section-header">
+            <h2>Fitness Tools & Calculators</h2>
+            <p>Get personalized insights for your fitness journey</p>
+        </div>
+
+        <div class="tools-container">
+            <!-- BMI Calculator -->
+            <div class="calculator-card">
+                <h3>BMI Calculator</h3>
+                <p class="calculator-description">Calculate your Body Mass Index</p>
+                
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label>Height (cm)</label>
+                        <input type="number" id="bmiHeight" placeholder="170" min="100" max="250">
+                    </div>
+                    <div class="input-group">
+                        <label>Weight (kg)</label>
+                        <input type="number" id="bmiWeight" placeholder="70" min="30" max="300">
+                    </div>
+                </div>
+
+                <button class="btn-calculate" onclick="calculateBMI()">Calculate BMI</button>
+
+                <div class="calculator-result" id="bmiResult" style="display:none;">
+                    <div class="result-value">
+                        <span class="result-number" id="bmiValue">0</span>
+                        <span class="result-unit">kg/m²</span>
+                    </div>
+                    <div class="result-category" id="bmiCategory"></div>
+                    <div class="bmi-scale">
+                        <div class="scale-item underweight">Underweight</div>
+                        <div class="scale-item normal">Normal</div>
+                        <div class="scale-item overweight">Overweight</div>
+                        <div class="scale-item obese">Obese</div>
+                        <div class="scale-indicator" id="bmiIndicator"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calorie Calculator -->
+            <div class="calculator-card">
+                <h3>Daily Calorie Calculator</h3>
+                <p class="calculator-description">Determine your daily caloric needs</p>
+
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number" id="calorieAge" placeholder="25" min="10" max="100">
+                    </div>
+                    <div class="input-group">
+                        <label>Weight (kg)</label>
+                        <input type="number" id="calorieWeight" placeholder="70" min="30" max="300">
+                    </div>
+                    <div class="input-group">
+                        <label>Height (cm)</label>
+                        <input type="number" id="calorieHeight" placeholder="170" min="100" max="250">
+                    </div>
+                    <div class="input-group">
+                        <label>Gender</label>
+                        <select id="calorieGender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Activity Level</label>
+                        <select id="calorieActivity">
+                            <option value="1.2">Sedentary</option>
+                            <option value="1.375">Light Activity</option>
+                            <option value="1.55">Moderate Activity</option>
+                            <option value="1.725">Very Active</option>
+                            <option value="1.9">Extremely Active</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="btn-calculate" onclick="calculateCalories()">Calculate</button>
+
+                <div class="calculator-result" id="calorieResult" style="display:none;">
+                    <div class="calorie-breakdown">
+                        <div class="calorie-item">
+                            <h4>Daily Calories</h4>
+                            <span class="calorie-value" id="dailyCalories">0</span>
+                        </div>
+                        <div class="calorie-item">
+                            <h4>For Weight Loss</h4>
+                            <span class="calorie-value" id="lossCalories">0</span>
+                        </div>
+                        <div class="calorie-item">
+                            <h4>For Muscle Gain</h4>
+                            <span class="calorie-value" id="gainCalories">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRESS TRACKING SECTION -->
+    <section id="progress" class="progress">
+        <div class="section-header">
+            <h2>Progress Tracking</h2>
+            <p>Monitor your fitness journey with advanced analytics</p>
+        </div>
+
+        <div class="progress-dashboard">
+            <!-- Weight Tracking -->
+            <div class="progress-card">
+                <h3>Weight Progress</h3>
+                <div class="weight-input">
+                    <input type="number" id="weightInput" placeholder="Enter weight (kg)" step="0.1">
+                    <button onclick="logWeight()" class="btn-log">Log Weight</button>
+                </div>
+                <div class="weight-chart">
+                    <div class="chart-placeholder">
+                        <canvas id="weightChart"></canvas>
+                    </div>
+                </div>
+                <div class="progress-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Current</span>
+                        <span class="stat-value" id="currentWeight">--</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Target</span>
+                        <span class="stat-value">70 kg</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Progress</span>
+                        <span class="stat-value" id="weightProgress">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strength Tracking -->
+            <div class="progress-card">
+                <h3>Strength Milestones</h3>
+                <div class="milestone-list">
+                    <div class="milestone">
+                        <div class="milestone-check">✓</div>
+                        <div class="milestone-info">
+                            <h4>First Push-up</h4>
+                            <p>Completed: Week 1</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-check">✓</div>
+                        <div class="milestone-info">
+                            <h4>10 Push-ups in a Row</h4>
+                            <p>Completed: Week 3</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-check">✓</div>
+                        <div class="milestone-info">
+                            <h4>First Pull-up</h4>
+                            <p>Completed: Week 5</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-check empty">○</div>
+                        <div class="milestone-info">
+                            <h4>20 Pull-ups in a Row</h4>
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-check empty">○</div>
+                        <div class="milestone-info">
+                            <h4>Muscle-up Achievement</h4>
+                            <p>Unlock: 50 pull-ups</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Body Measurements -->
+            <div class="progress-card">
+                <h3>Body Measurements</h3>
+                <div class="measurements-list">
+                    <div class="measurement">
+                        <div class="measurement-label">
+                            <span>Chest</span>
+                            <span class="measurement-change">+3 cm</span>
+                        </div>
+                        <div class="measurement-value">95 cm</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="measurement">
+                        <div class="measurement-label">
+                            <span>Arms</span>
+                            <span class="measurement-change">+2.5 cm</span>
+                        </div>
+                        <div class="measurement-value">32 cm</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="measurement">
+                        <div class="measurement-label">
+                            <span>Waist</span>
+                            <span class="measurement-change">-5 cm</span>
+                        </div>
+                        <div class="measurement-value">78 cm</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <h2>Success Stories</h2>
+            <p>See how our members transformed their lives</p>
+        </div>
+
+        <div class="testimonials-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="avatar">👨‍💼</div>
+                    <div class="author-info">
+                        <h4>Alex Johnson</h4>
+                        <p>Fitness Enthusiast</p>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"ONE Fit completely transformed my fitness journey. The structured programs and nutrition guidance helped me gain 8kg of muscle in just 12 weeks. Highly recommended!"</p>
+                <div class="transformation">
+                    <span>→ 8kg muscle gain</span>
+                    <span>→ 12 week program</span>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card featured">
+                <div class="testimonial-badge">Featured</div>
+                <div class="testimonial-header">
+                    <div class="avatar">👩‍💻</div>
+                    <div class="author-info">
+                        <h4>Sarah Chen</h4>
+                        <p>Corporate Professional</p>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"As a busy professional, I loved how flexible the programs are. The calisthenics approach requires no equipment, and the progress tracker kept me motivated. Lost 12kg in 16 weeks!"</p>
+                <div class="transformation">
+                    <span>→ 12kg fat loss</span>
+                    <span>→ 16 week challenge</span>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="avatar">🧑‍🎓</div>
+                    <div class="author-info">
+                        <h4>Mike Rodriguez</h4>
+                        <p>Student Athlete</p>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The advanced calisthenics program helped me achieve my first muscle-up in 8 weeks. The form guides are incredibly detailed and the community is very supportive."</p>
+                <div class="transformation">
+                    <span>→ Muscle-up skill</span>
+                    <span>→ 8 week program</span>
+                </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="avatar">👵</div>
+                    <div class="author-info">
+                        <h4>Diana Wilson</h4>
+                        <p>Wellness Coach</p>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Even at 45, I felt welcomed in this community. The beginner programs are perfectly scaled, and the nutrition guides helped me feel healthier than I have in years."</p>
+                <div class="transformation">
+                    <span>→ Better health markers</span>
+                    <span>→ Increased energy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about ONE Fit</p>
+        </div>
+
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do I need equipment to start?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No! One of the biggest advantages of calisthenics is that it requires zero equipment. You can start your journey using just your bodyweight. However, having a pull-up bar is beneficial for pull exercises, but it's optional.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How long does it take to see results?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Most users report noticeable changes within 4-6 weeks. Significant transformation typically occurs within 8-12 weeks. Results depend on consistency, nutrition, and recovery. Strength gains appear faster than body composition changes.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is ONE Fit suitable for beginners?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! Our beginner program is designed specifically for those starting their fitness journey. We provide detailed form guides, scaled variations, and progressive difficulty increases to ensure safe and sustainable progress.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can women benefit from these programs?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Calisthenics programs are excellent for women. They build lean muscle, increase strength, and can be adjusted for any fitness level. Our nutrition plans account for different metabolic needs and our community is inclusive and supportive.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How often should I train per week?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Our beginner program recommends 3 days per week, intermediate 4 days, and advanced 5-6 days. Rest days are crucial for recovery and muscle growth. Listen to your body and adjust as needed. Quality over quantity!</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Do you provide nutrition guidance?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We provide three comprehensive nutrition plans: Muscle Gain, Fat Loss, and Maintenance. Each includes sample daily menus, macro breakdowns, and meal prep guides. Our nutrition recommendations complement your training program.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is there a money-back guarantee?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer a 30-day money-back guarantee with no questions asked. We're confident in our programs, and if you're not satisfied for any reason, you'll get a full refund. Your satisfaction is our priority.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 8 -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can I modify the programs?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! While our structured programs provide a proven framework, we encourage customization. Our progress tracker helps you modify intensity based on your recovery, goals, and preferences. Flexibility is key to long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>Have questions? We'd love to hear from you</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <form onsubmit="handleContact(event)">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="contactSubject" required>
+                            <option value="">Select a Subject</option>
+                            <option value="support">Support</option>
+                            <option value="billing">Billing</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+                <div id="formMessage"></div>
+            </div>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <h4>Email</h4>
+                    <p>support@onefit.com</p>
+                </div>
+                <div class="info-item">
+                    <h4>Phone</h4>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <h4>Address</h4>
+                    <p>123 Fitness Street<br>Health City, ST 12345</p>
+                </div>
+                <div class="info-item">
+                    <h4>Hours</h4>
+                    <p>Mon - Fri: 9am - 6pm<br>Sat - Sun: 10am - 4pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ONE Fit</h4>
+                <p>Transform your body. Elevate your life. Build strength with science-backed calisthenics programs.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">𝕏</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">▶</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#workouts">Workouts</a></li>
+                    <li><a href="#calisthenics">Exercises</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#progress">Progress Tracking</a></li>
+                    <li><a href="#calculators">Calculators</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 ONE Fit. All rights reserved. | Designed with 💚 for your fitness journey</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
