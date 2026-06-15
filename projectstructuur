@@ -1,0 +1,29 @@
+one-fit/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── dashboard/page.tsx
+│   ├── nutrition/page.tsx
+│   ├── workouts/page.tsx
+│   ├── premium/page.tsx
+│   ├── api/
+│   │   ├── calories/route.ts
+│   │   ├── stripe/route.ts
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── Pricing.tsx
+│
+├── lib/
+│   ├── calories.ts
+│   ├── stripe.ts
+│
+├── styles/
+│   └── globals.css
+│
+├── package.json
+├── next.config.js
+├── tailwind.config.js
+├── .env.local
+└── README.md
