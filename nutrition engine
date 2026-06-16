@@ -1,0 +1,8 @@
+model Meal {
+  id       String @id @default(cuid())
+  name     String
+  calories Int
+  protein  Float
+  carbs    Float
+  fats     Float
+}
