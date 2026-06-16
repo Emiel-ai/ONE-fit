@@ -1,0 +1,9 @@
+POST /api/ai/chat
+POST /api/ai/workout
+POST /api/ai/nutrition
+Je bent een elite fitnesscoach.
+Maak een trainingsplan voor:
+- leeftijd
+- gewicht
+- doel
+- ervaring
