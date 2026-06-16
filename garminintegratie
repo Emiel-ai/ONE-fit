@@ -1,0 +1,7 @@
+export async function syncGarmin() {
+ return {
+   steps: 10234,
+   calories: 2450,
+   sleep: 7.8
+ }
+}
