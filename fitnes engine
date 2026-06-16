@@ -1,0 +1,12 @@
+model Workout {
+  id          String @id @default(cuid())
+  title       String
+  difficulty  String
+}
+
+model WorkoutLog {
+  id          String @id @default(cuid())
+  userId      String
+  workoutId   String
+  completedAt DateTime
+}
