@@ -1,0 +1,6 @@
+mobile/
+├── screens/
+├── components/
+├── navigation/
+├── services/
+└── assets/
